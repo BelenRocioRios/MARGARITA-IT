@@ -1,0 +1,106 @@
+.caja-login-user{
+    margin: 0   ;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+
+}
+
+.port-login {
+    width: 100%;
+    height: 10%;
+}
+
+.caja-login{
+    width: 350px;
+    height: 500px;
+    background-color: pink;
+    overflow: hidden;
+    border-radius:10px ;
+    box-shadow: 5px 20px 50px #000;
+}
+#chk{
+    display: none;
+
+}
+.signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.leb-login{
+    color: white;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+}
+
+.inp-login{
+    width: 60%;
+    height: 20px;
+    background-color: rgb(190, 131, 245);
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.boton-login{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background-color: blueviolet;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+
+}
+
+.boton-login:hover{
+    background: rgb(97, 47, 145);
+}
+
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login .leb-login{
+    color: #573b8a;
+    transform: scale(.6);
+} 
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+}
+
+#chk:checked ~ .login .leb-login {
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup  .leb-login{
+    transform: scale(.6);
+}
+

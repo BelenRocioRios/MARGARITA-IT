@@ -1,0 +1,62 @@
+/*PORTADA DE SECCION DE GIFT CARD*/
+
+/* ME QUEDA ACHICAR EL DIV DE LA PORTADA BUSCANDO EL ANCHO DEL DIV Y AHCICARLO
+CENTRAR EL TEXTO DE LA GIFT */
+
+.portada {
+   height: 50%;
+   width: 100%;
+}
+
+.portada-img {
+   height: 50%;
+   width: 100%;
+   padding: 0 0 40px 0;
+
+}
+
+
+/*ESTILOS DE LAS GIFT*/
+
+.caja-gift img {
+   width: 90%;
+   height: 80%;
+}
+
+.caja-img-gift {
+   display: flex;
+   justify-content: center;
+
+}
+
+.gift-img {
+   border-radius: 5px;
+   width: 200px;
+   height: 280px;
+   object-fit: cover;
+   box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+   display: block;
+   transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+   margin-top: -10px;
+}
+.caja-img-gift  img:hover{
+   box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+ }
+ 
+.caja-precios{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 45px;
+   text-align: center;
+}
+
+.caja-precios a{
+   text-decoration: none;
+   color: black;
+
+}
+.caja-precios a:hover{
+   color: black;
+}
+   
