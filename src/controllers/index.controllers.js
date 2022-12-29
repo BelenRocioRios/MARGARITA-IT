@@ -19,8 +19,17 @@ indexCtrl.renderLogin = (req,res)=>{
 indexCtrl.renderColeccion = (req,res)=>{
     res.render('coleccion')
 };
+indexCtrl.renderCarteras = (req,res)=>{
+    res.render('carteras')
+};
 
+indexCtrl.renderAccesorios = (req,res)=>{
+    res.render('accesorios')
+};
 
+indexCtrl.renderLibreria = (req,res)=>{
+    res.render('libreria')
+};
 
 
 module.exports = indexCtrl;
