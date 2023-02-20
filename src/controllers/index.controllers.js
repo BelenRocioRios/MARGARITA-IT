@@ -12,9 +12,7 @@ indexCtrl.renderBeauty = (req,res)=>{
 indexCtrl.renderGcard = (req,res)=>{
     res.render('giftcard')
 };
-indexCtrl.renderLogin = (req,res)=>{
-    res.render('login')
-};
+
 
 indexCtrl.renderColeccion = (req,res)=>{
     res.render('coleccion')
@@ -32,4 +30,13 @@ indexCtrl.renderLibreria = (req,res)=>{
 };
 
 
+
+
+
+
 module.exports = indexCtrl;
+     
+
+
+
+         

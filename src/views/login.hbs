@@ -11,16 +11,17 @@
         <input type="checkbox" id="chk" aria-hidden="true">
 
         <div class="signup">
-            <form >
+            <form action="/users/signup" method="POST">
                 <label class="leb-login" for="chk" aria-hidden="true"> Registrar</label>
-                <input class="inp-login" type="text" name="txt" placeholder="Nombre" required="">
+                <input class="inp-login" type="text" name="name" placeholder="Nombre" required="">
                 <input class="inp-login" type="email" name="email" placeholder="email" required="">
-                <input class="inp-login" type="Pasword" name="pswd" placeholder="contraseña" required="">
+                <input class="inp-login" type="Password" name="pswd" placeholder="password" required="">
+                <input class="inp-login" type="Password" name="confirm_pswd" placeholder="confirm_password" required="">
                 <button class="boton-login">Aceptar</button>
             </form>
         </div>
         <div class="login">
-            <form >
+            <form action="/users/signin" method="POST" >
                 <label class="leb-login"  for="chk" aria-hidden="true" >Ingresar</label>
                 <input class="inp-login" type="email" name="email" placeholder="email" required="">
                 <input class="inp-login" type="Pasword" name="pswd" placeholder="contraseña" required="">

@@ -1,6 +1,8 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
+const morgan = require('morgan');
+
 
 
 //initialiations
@@ -22,6 +24,7 @@ app.set('view engine', '.hbs');
 
 
 //Middlewares 
+app.use(morgan('dev'));
 app.use(express.urlencoded({extended:false}));
 
 
@@ -31,6 +34,9 @@ app.use(express.urlencoded({extended:false}));
 
 //Routas
 app.use(require('./routes/index.routes'));
+app.use(require('./routes/users.routes'));
+
+
 
 //static files
 
@@ -41,4 +47,3 @@ app.use(express.static(path.join(__dirname,  'public')));
 module.exports = app; 
 
 
-//ME FALTA RESOLVER RUTAS EN Y AGREGAR LAS VISTAS, ARMAR BASE DE DATOS EN FORMULAIRO Y LOGIN
