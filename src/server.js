@@ -2,6 +2,10 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const morgan = require('morgan');
+const bodyParser = require('body-parser');
+const flash = require('connect-flash');
+const session = require('express-session');
+
 
 
 
@@ -25,12 +29,31 @@ app.set('view engine', '.hbs');
 
 //Middlewares 
 app.use(morgan('dev'));
+
+
+app.use(bodyParser.json());
 app.use(express.urlencoded({extended:false}));
+app.set('json spaces', 1);
+
+app.use(session ({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized:true
+}));
+app.use(flash());
+
+
 
 
 
 
 //Global variables
+
+app.use((req, res, next)=>
+{
+    res.locals.error_msg = req.flash('error_msg');
+    next();
+});
 
 //Routas
 app.use(require('./routes/index.routes'));

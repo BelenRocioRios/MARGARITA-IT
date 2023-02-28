@@ -1,6 +1,12 @@
 <div>
    <img class="port-login" src="../img/Registrate/portada-3.png" alt=""> 
 </div>
+
+
+
+      
+
+    
  
 
  <section class="caja-login-user p-">
@@ -10,12 +16,12 @@
         <input type="checkbox" id="chk" aria-hidden="true">
 
         <div class="signup">
-            <form action="users/signup" method="POST">
+            <form action="/users/signup" method="POST"  >
                 <label class="leb-login" for="chk" aria-hidden="true"> Registrar</label>
-                <input class="inp-login" type="text" name="name" placeholder="Nombre" required="">
-                <input class="inp-login" type="email" name="email" placeholder="email" required="">
-                <input class="inp-login" type="Password" name="pswd" placeholder="password" required="length">
-                <input class="inp-login" type="Password" name="confirm_pswd" placeholder="confirm_password" required="length">
+                <input class="inp-login" type="text" name="name" placeholder="Nombre" value="{{name}}" >
+                <input class="inp-login" type="email" name="email" placeholder="email" value="{{email}}">
+                <input class="inp-login" type="password" name="password" placeholder="password" >
+                <input class="inp-login" type="password" name="confirm_password" placeholder="confirm_password" >
                 <button class="boton-login">Aceptar</button>
             </form>
         </div>
